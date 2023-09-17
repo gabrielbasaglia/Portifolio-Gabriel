@@ -1,5 +1,6 @@
 {
   "name": "meu-portifolio",
+  "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -36,7 +37,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "astro": "^3.1.0"
+    "astro": "^3.1.0",
+    "astro-seo": "^0.8.0"
   },
   "author": "Gabriel Basaglia (https://github.com/gabrielbasaglia)"
 }
