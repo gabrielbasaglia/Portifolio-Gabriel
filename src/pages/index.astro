@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
+import devloper7 from "../../public/assets/developer7.svg";
 ---
 
 <Layout
@@ -15,11 +16,10 @@ import Layout from "../layouts/Layout.astro";
     flex flex-col gap-16 lg:flex-row-reverse lg:items-center"
   >
     <img
-      src="../../public/assets/developer7.svg"
-      width="80"
-      height="80"
+      src={devloper7.src}
+      width={devloper7.width}
+      height={devloper7.height}
       alt="desenvolvedor"
-      class="mx-auto w-48 xl:w-64"
     />
     <div class="w-8/12 md:w-6/12 mx-auto">
       <h1 class="text-4xl mx-auto">

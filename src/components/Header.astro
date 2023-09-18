@@ -1,5 +1,6 @@
 ---
 import Button from "./Button.astro";
+import devloper7 from "../../public/assets/developer7.svg";
 ---
 
 <script>
@@ -19,10 +20,11 @@ import Button from "./Button.astro";
 >
   <a href="#"
     ><img
-      width="80"
-      height="80"
-      src="../../public/assets/developer7.svg"
-      alt=""
+      class="w-14 h-14"
+      src={devloper7.src}
+      width={devloper7.width}
+      height={devloper7.height}
+      alt="Logo desenvolvedor"
     /></a
   >
   <button id="navMenuToggler" class="fixed top-0 right-0 p-4 z-20 lg:hidden">
