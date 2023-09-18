@@ -1,16 +1,17 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<footer class="text-center mt-auto py-4">
+<footer class="text-center mt-auto mb-4">
   <small
     >Copyright &copy;
-    <span id="copyright"> | All rights reserved</span> | All rights reserved
+    <span id="copyright"> | All rights reserved</span> | All rights reserved.
+    Built with ♥ by Gabriel Basaglia.
   </small>
-</footer>
 
-<script>
-  document.querySelector("#copyright").textContent = new Date()
-    .getFullYear()
-    .toString();
-</script>
+  <script>
+    document.querySelector("#copyright").textContent = new Date()
+      .getFullYear()
+      .toString();
+  </script>
+</footer>

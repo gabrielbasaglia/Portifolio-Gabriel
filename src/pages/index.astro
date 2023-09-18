@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -7,16 +9,27 @@ import Layout from "../layouts/Layout.astro";
   seoTitle="Gabriel Basaglia, desenvolvedor FullStack"
   seoDesc="Desenvolvedor FullStack, Astro, React, NextJS e Node"
 >
+  <Header />
   <main
-    class="mt-16 xl:mt-24 px-10 md:px-14 xl:px-32 flex flex-col gap-16 xl:flex-row xl:items-center"
+    class="mt-16 xl:mt-24 px-8 md:px-12 xl:px-28 flex flex-col gap-16 xl:flex-row-reverse xl:items-center"
   >
-    <div>
-      <h1 class="text-3xl">
+    <img
+      src="../../public/assets/developer.png"
+      alt="desenvolvedor"
+      class="mx-auto w-32 xl:w-40"
+    />
+    <div class="w-8/12 md:w-6/12 mx-auto">
+      <h1 class="text-4xl mx-auto">
         Olá 👋, Eu sou o
         <span class="text-cyan-700 dark:text-cyan-400 font-bold"
           >Gabriel Basaglia</span
         >
+        <p class="text-lg mx-auto mt-5">
+          "Programar é como compor uma sinfonia, onde cada linha de código é uma
+          nota que ecoa a alegria pela criação de coisas!
+        </p>
       </h1>
     </div>
   </main>
+  <Footer />
 </Layout>
