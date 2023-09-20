@@ -1,0 +1,40 @@
+---
+import devloper7 from "../../public/assets/developer7.svg";
+---
+
+<script>
+  document
+    .getElementById("navMenuToggler")
+    ?.addEventListener("click", function () {
+      const navMenu = document.getElementById("navMenu");
+      navMenu?.classList.toggle("h-0");
+      navMenu?.classList.toggle("h-full");
+      navMenu?.classList.toggle("opacity-80");
+      navMenu?.classList.toggle("opacity-100");
+    });
+</script>
+
+<div
+  id="navMenu"
+  class="fixed lg:relative top-0 left-0 bg-light dark:bg-dark dark:bg-opacity-95 bg-opacity-95 text-center overflow-hidden items-center justify-center lg:justify-between transition-all duration-500 flex flex-col lg:flex-row gap-8 w-full h-0 opacity-80 z-10 lg:h-full lg:opacity-100"
+>
+  <a class="flex gap-2 text-xl items-center text-cyan-400 font-medium" href="#"
+    ><img
+      class="w-14 h-14"
+      src={devloper7.src}
+      width={devloper7.width}
+      height={devloper7.height}
+      alt="Logo desenvolvedor"
+    /> Gabriel Basaglia
+  </a>
+
+  <nav class="flex flex-col items-center lg:flex-row gap-10">
+    <a href="#">Habilidades</a>
+    <a href="#">Portifólio</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <button id="navMenuToggler" class="fixed top-0 right-0 p-4 z-20 lg:hidden">
+    Menu</button
+  >
+</div>

@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
-import devloper7 from "../../public/assets/developer7.svg";
+import Main from "../components/Main.astro";
 ---
 
 <Layout
@@ -11,28 +11,6 @@ import devloper7 from "../../public/assets/developer7.svg";
   seoDesc="Desenvolvedor FullStack, Astro, React, NextJS e Node"
 >
   <Header />
-  <main
-    class="mt-16 xl:mt-24 px-8 md:px-12 xl:px-28
-    flex flex-col gap-16 lg:flex-row-reverse lg:items-center"
-  >
-    <img
-      src={devloper7.src}
-      width={devloper7.width}
-      height={devloper7.height}
-      alt="desenvolvedor"
-    />
-    <div class="w-8/12 md:w-6/12 mx-auto">
-      <h1 class="text-4xl mx-auto">
-        Olá 👋, Eu sou o
-        <span class="text-cyan-700 dark:text-cyan-400 font-bold"
-          >Gabriel Basaglia</span
-        >
-        <p class="text-lg mx-auto mt-5">
-          "Programar é como compor uma sinfonia, onde cada linha de código é uma
-          nota que ecoa a alegria pela criação de coisas!
-        </p>
-      </h1>
-    </div>
-  </main>
+  <Main />
   <Footer />
 </Layout>

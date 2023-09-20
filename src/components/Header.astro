@@ -1,46 +1,8 @@
 ---
-import Button from "./Button.astro";
+import Navigation from "../components/Navigation.astro";
 import devloper7 from "../../public/assets/developer7.svg";
 ---
 
-<script>
-  document
-    .getElementById("navMenuToggler")
-    ?.addEventListener("click", function () {
-      const navMenu = document.getElementById("navMenu");
-      navMenu?.classList.toggle("h-0");
-      navMenu?.classList.toggle("h-full");
-      navMenu?.classList.toggle("opacity-80");
-      navMenu?.classList.toggle("opacity-100");
-    });
-</script>
-
-<header
-  class="h-12 md:h-20 px-8 md:px-12 xl:mx-auto xl:max-w-screen-lg flex gap-12 items-center"
->
-  <a href="#"
-    ><img
-      class="w-14 h-14"
-      src={devloper7.src}
-      width={devloper7.width}
-      height={devloper7.height}
-      alt="Logo desenvolvedor"
-    /></a
-  >
-  <button id="navMenuToggler" class="fixed top-0 right-0 p-4 z-20 lg:hidden">
-    Menu</button
-  >
-
-  <div
-    id="navMenu"
-    class="fixed lg:relative top-0 left-0 bg-light dark:bg-dark dark:bg-opacity-95 bg-opacity-95 text-center overflow-hidden transition-all duration-500 flex flex-col lg:flex-row gap-8 items-center justify-center w-full h-0 opacity-80 z-10 lg:h-full lg:opacity-100"
-  >
-    <nav class="flex lg:flex-1 gap-8 flex-col lg:flex-row">
-      <a href="#">Home</a>
-      <a href="#">Habilidades</a>
-      <a href="#">Portifólio</a>
-      <a href="#">Contato</a>
-    </nav>
-    <Button />
-  </div>
+<header class="px-3 py-5 max-w-screen-lg mx-auto">
+  <Navigation />
 </header>
